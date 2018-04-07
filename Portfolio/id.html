@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Donor Perfect</title>
+  <meta charset="utf-8"/>
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="CSS/id.css">
+</head>
+<body>
+
+  <header>
+    <div id="headfix">
+  <div class= "logobar">
+
+  <a class="logo">NB</a>
+  </div>
+
+  <div class="navigation-bar">
+
+    <nav class="navhead">
+       <a href="Home.html">Home</a>
+      <a href="Home.html#section2">Portfolio</a>
+      <a>Resume</a>
+      <a>Contact</a>
+    </nav>
+  </div>
+  </div>
+  </header>
+
+    <section class="jumbotron">
+       <div class="overlay"></div>
+       <div class="container">
+          <div>
+             <h2>Biosafety and Bloodborne Pathogen Training</h2>
+           </div>
+           <div>
+             <h3>University of Michigan, Environment Health & Safety Dept.</h3>
+           </div>
+           <div>
+            <h5>Role: Instructional Designer, Interaction Designer</h5>
+           </div>
+        <div>
+      <a class="btn btn-primary"  role="button">Scroll down</a>
+
+    </div>
+    <a href="#section3">
+    <p><i class="arrow down"></i></p>
+  </a>
+  </div>
+</section>
+
+<div id="section3"></div>
+<h4>Overview
+  <div id="line">
+  </div>
+</h4>
+
+<div class="paras">
+  <br>
+
+<p>The University of Michigan Environment, Health and Safety Department develops online instructional material and training modules for staff working in bio-safety and other labs. I was hired to design and develop interactive online course material.
+</p>
+
+<h6>Design Problem</h6>
+<p>The project was to develop a new online course on an LMS called ClaroThe existing method of training for staff was was primarily done through in-person training sessions. There was a an online training course in place but limited in scope and interactivity.
+</p>
+
+<h4>Process
+  <div id="line">
+  </div>
+</h4>
+<h6>Background Research</h6>
+<p>To understand the exact requirements, I did a comprehensive review of the training material and compared it to the existing online course to identify limitations and opportunity areas. Below are the screens from the old version of the online course: </p>
+</div>
+
+
+<div class = "oldimages">
+  <img src="Images/oi1.png" class="oig">
+  <img src="Images/oi2.png" class="oig">
+  <img src="Images/oi3.png" class="oig">
+</div>
+
+<div class="paras">
+<h6>Wireframing and Screen mockups</h6>
+<p>Based on the above approach, I created initial screen mock-ups and wireframes on MS Powe</p>
+</div>
+
+
+<div class = "oldimages">
+  <img src="Images/ni2.png" class="oig">
+  <img src="Images/ni1.png" class="oig">
+  <img src="Images/ni3.png" class="oig">
+</div>
+
+<h4>Final Product
+  <div id="line">
+  </div>
+</h4>
+<br>
+<div class="paras">
+<p>After finalizing the screens and course structure, the final product was then developed on an online LMS called Claro. Check out the video below to see the working course preview:
+</p>
+</div>
+
+<video width="640" height="320" controls>
+  <source src="Images/vidz.mp4">
+Your browser does not support the video tag.
+</video>
+<footer>
+
+
+<div class="footnav">
+  <div>
+
+  <p class="copywright">&copy; Nalin Bhatia | 2018</p>
+  </div>
+
+  <nav class="socialnav">
+     <a href="https://www.linkedin.com/in/nalinbhatia/" target="_blank"><img src="https://png.icons8.com/ios/50/FFFFFF/linkedin-filled.png" class="icon"></a>
+    <a href="https://plus.google.com/116453238195990192577" target="_blank"><img src="https://png.icons8.com/ios/50/FFFFFF/google-plus.png" class="icon"></a>
+    <a href="https://www.facebook.com/nalinb1" target="_blank"><img src="https://png.icons8.com/ios-glyphs/50/FFFFFF/facebook.png" class="icon"></a>
+    <a href="https://twitter.com/nalin_bhatia" target="_blank"><img src="https://png.icons8.com/ios/50FFFFFF/twitter-filled.png" class="icon"></a>
+  </nav>
+</div>
+</div>
+</footer>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+
+    console.log(this, this.href.split("#")[0], window.location.pathname);
+    if (this.hash !== "" && this.href.split("#")[0]===(window.location.origin+ window.location.pathname)) {
+      event.preventDefault();
+      var trans = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(trans).offset().top
+      }, 900, function(){
+
+
+        window.location.hash = trans;
+      });
+    }
+  });
+});
+</script>
+
+</body>
+
+</html>
