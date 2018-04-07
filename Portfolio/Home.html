@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -141,3 +142,148 @@ $(document).ready(function(){
 </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nalin Portfolio</title>
+  <meta charset="utf-8"/>
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="CSS/Main.css">
+</head>
+<body>
+
+  <header>
+    <div id="headfix">
+<div class= "logobar">
+
+<a class="logo">NB</a>
+</div>
+
+<div class="navigation-bar">
+
+    <nav class="navhead">
+       <a href="Home.html">Home</a>
+      <a href="Home.html/#section2">Portfolio</a>
+      <a>Resume</a>
+      <a>Contact</a>
+    </nav>
+  </div>
+</div>
+</header>
+
+    <section class="jumbotron">
+       <div class="overlay"></div>
+       <div class="container">
+          <div>
+             <h2>Hi! I'm Nalin Bhatia</h2>
+           </div>
+           <div>
+            <h3>UX Designer | Architect</h3>
+           </div>
+        <div>
+      <a class="btn btn-primary" href="#section2" role="button">See my work</a>
+    </div>
+  </div>
+</section>
+
+<div id="section2"></div>
+
+<section class="anch">
+  <h4>Portfolio<div id="line">
+  </div></h4>
+
+  <div class="projects">
+
+    <div class="container2">
+      <a href="Ecohomes.html">
+      <img src="Images/ci.jpg" alt="EcoHomes" class="image2">
+        <div class="overlay2">
+        <div class="text2">EcoHomes</div>
+        <div class="text3">Interaction Design</div>
+       </div>
+     </a>
+</div>
+
+<div class="container2">
+  <a href="Dp.html">
+       <img src="Images/dp.jpg" alt="Donor Perfect" class="image2">
+         <div class="overlay2">
+         <div class="text2">Donor Perfect</div>
+         <div class="text3">Contextual Inquiry and Consulting</div>
+        </div>
+        </a>
+</div>
+
+<div class="container2">
+  <a href="id.html">
+       <img src="Images/id.jpg" alt="Instructional Design" class="image2">
+         <div class="overlay2">
+         <div class="text2">Biosafety Training</div>
+         <div class="text3">Instructional Design: U-M EHS</div>
+        </div>
+        </a>
+</div>
+
+<div class="container2">
+    <a href="yf.html">
+       <img src="Images/yf.jpg" alt="Yahoo Finance" class="image2">
+         <div class="overlay2">
+         <div class="text2">Yahoo! Finance</div>
+         <div class="text3">Needs Assessment and Usability Assessment</div>
+        </div>
+        </a>
+</div>
+</div>
+
+</section>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+
+
+    if (this.hash !== "") {
+      event.preventDefault();
+      var trans = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(trans).offset().top
+      }, 900, function(){
+
+
+        window.location.hash = trans;
+      });
+    }
+  });
+});
+</script>
+
+<footer>
+
+
+<div class="footnav">
+  <div>
+
+  <p class="copywright">&copy; Nalin Bhatia | 2018</p>
+  </div>
+
+  <nav class="socialnav">
+     <a href="https://www.linkedin.com/in/nalinbhatia/" target="_blank"><img src="https://png.icons8.com/ios/50/FFFFFF/linkedin-filled.png" class="icon"></a>
+    <a href="https://plus.google.com/116453238195990192577" target="_blank"><img src="https://png.icons8.com/ios/50/FFFFFF/google-plus.png" class="icon"></a>
+    <a href="https://www.facebook.com/nalinb1" target="_blank"><img src="https://png.icons8.com/ios-glyphs/50/FFFFFF/facebook.png" class="icon"></a>
+    <a href="https://twitter.com/nalin_bhatia" target="_blank"><img src="https://png.icons8.com/ios/50FFFFFF/twitter-filled.png" class="icon"></a>
+  </nav>
+</div>
+
+</footer>
+
+</body>
+
+</html>
+>>>>>>> db872bc9d7fa046142979bf20534ac3757ef6fcb
