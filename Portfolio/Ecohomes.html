@@ -51,24 +51,51 @@
 </section>
 
 <div id="section3"></div>
-<h4>Overview</h4>
+<h4>Overview
+<div id="line">
+</h4>
 
 <div class="paras">
 <p>Sustainability as a way of life is developing rapidly in the country, however, still lags far behind in the state of Michigan. The intervention is based upon a project by the City of Ann Arbor called ‘Green Rental Housing’ which aims to increase energy efficiency in the community by targeting the housing market.</p>
 
 <img src="Images/stats.jpg" alt="stats" class="image">
-<h4>Competitive Analysis</h4>
+<h4>Competitive Analysis
+  <div id="line">
+  </div>
+</h4>
 
 <p>Detailed competitive analysis of these tools suggested that only two tools are formally designed for customers to look for green homes – Greenhomesforsale and Sustainable House Day, but both are just web based tools.
 
 The other three tools serve only a very limited part of the context such as rental search and relevant information.</p>
 <img src="Images/comp.png" alt="competitive analysis" class="image">
 
-<h4>User Analysis</h4>
+<h4>User Analysis
+<div id="line">
+</h4>
 <p>To get an understanding of who the target audience are, their needs and motivations, I sent out a 15-question survey to the academic community of the University. Click here to access the survey.
 
 Having received a total of 53 responses, following were the key takeaways: </p>
 </div>
+
+<footer>
+
+
+<div class="footnav">
+  <div>
+
+  <p class="copywright">&copy; Nalin Bhatia | 2018</p>
+  </div>
+
+  <nav class="socialnav">
+     <a href="https://www.linkedin.com/in/nalinbhatia/" target="_blank"><img src="https://png.icons8.com/ios/50/FFFFFF/linkedin-filled.png" class="icon"></a>
+    <a href="https://plus.google.com/116453238195990192577" target="_blank"><img src="https://png.icons8.com/ios/50/FFFFFF/google-plus.png" class="icon"></a>
+    <a href="https://www.facebook.com/nalinb1" target="_blank"><img src="https://png.icons8.com/ios-glyphs/50/FFFFFF/facebook.png" class="icon"></a>
+    <a href="https://twitter.com/nalin_bhatia" target="_blank"><img src="https://png.icons8.com/ios/50FFFFFF/twitter-filled.png" class="icon"></a>
+  </nav>
+</div>
+</div>
+</footer>
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -76,8 +103,8 @@ Having received a total of 53 responses, following were the key takeaways: </p>
 $(document).ready(function(){
   $("a").on('click', function(event) {
 
-
-    if (this.hash !== "") {
+    console.log(this, this.href.split("#")[0], window.location.pathname);
+    if (this.hash !== "" && this.href.split("#")[0]===(window.location.origin+ window.location.pathname)) {
       event.preventDefault();
       var trans = this.hash;
 
